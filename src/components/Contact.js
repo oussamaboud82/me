@@ -23,7 +23,7 @@ const Contact = () => {
     { 
       node: <FaGithub className="text-gray-300" />, 
       title: "GitHub", 
-      href: "#" 
+      href: "https://github.com/oussamaboud82/me" 
     },
     { 
       node: <FaLinkedin className="text-blue-600" />, 

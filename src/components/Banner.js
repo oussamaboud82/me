@@ -4,7 +4,7 @@ import React from 'react';
 
 import { TypeAnimation} from 'react-type-animation';
 import {motion} from 'framer-motion'
-import {fadeIn, fadein} from '../variants'
+import {fadeIn} from '../variants'
 const Banner = () => {
 
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='Home'>
@@ -72,7 +72,7 @@ whileInView={"show"}
 viewport={{once:false,amount:0.7}}
   
      className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'> 
-<a href='#'><FiGithub/></a>
+<a href='https://github.com/oussamaboud82/me' target='_blank' rel='noopener noreferrer'><FiGithub/></a>
 <a href='#'><FiLinkedin/> </a>
 <a href='https://www.instagram.com/ousama_10_25/?utm_source=ig_web_button_share_sheet'><FiInstagram/></a>
   </motion.div>

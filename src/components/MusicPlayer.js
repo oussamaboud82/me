@@ -93,25 +93,6 @@ const MusicPlayer = () => {
           />
         </div>
       </div>
-
-      <style jsx>{`
-        .slider::-webkit-slider-thumb {
-          appearance: none;
-          width: 12px;
-          height: 12px;
-          background: white;
-          border-radius: 50%;
-          cursor: pointer;
-        }
-        .slider::-moz-range-thumb {
-          width: 12px;
-          height: 12px;
-          background: white;
-          border-radius: 50%;
-          cursor: pointer;
-          border: none;
-        }
-      `}</style>
     </div>
   );
 };

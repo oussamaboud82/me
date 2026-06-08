@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import { gsap } from 'gsap';
+import frImg from '../assets/fr.png';
 
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
@@ -12,7 +13,7 @@ const cardData = [
     title: 'French-app',
     description: 'A project to learn French',
     label: 'I ',
-    image: 'fr.png'
+    image: frImg
   },
   {
     color: '#060010',
