@@ -1,0 +1,20 @@
+Music Instructions:
+==================
+
+To add background music to your portfolio:
+
+1. Place your music file (MP3 format) in this public folder
+2. Rename it to "background-music.mp3" 
+3. The MusicPlayer component will automatically detect and play it
+
+Recommended music types:
+- Soft instrumental music
+- Lo-fi beats
+- Ambient background music
+- Make sure the file is not too large (under 5MB recommended)
+
+The music player includes:
+- Play/Pause button
+- Volume control
+- Mute button
+- Auto-loop functionality
