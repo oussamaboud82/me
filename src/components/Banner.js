@@ -62,7 +62,14 @@ viewport={{once:false,amount:0.7}}
 >
   contact
 </button>
-      <a href='#' className='text-gradient btn-link '>me</a>
+      <a
+        href='https://github.com/oussamaboud82/me'
+        target='_blank'
+        rel='noopener noreferrer'
+        className='text-gradient btn-link'
+      >
+        me
+      </a>
      </motion.div>
     
      <motion.div

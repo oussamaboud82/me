@@ -43,7 +43,7 @@ const Contact = () => {
     { 
       node: <FaTelegram className="text-blue-400" />, 
       title: "Telegram", 
-      href: "https://telegram.org" 
+      href: "https://web.telegram.org/k/" 
     },
     { 
       node: <FaWhatsapp className="text-green-500" />, 

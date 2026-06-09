@@ -7,7 +7,12 @@ const Header = () => {
 
 <div className='flex justify-between items-center'>
 
-<a href="#" className='text-4xl font-bold text-white hover:text-gradient transition-colors'>
+<a
+  href="https://github.com/oussamaboud82/me"
+  target="_blank"
+  rel="noopener noreferrer"
+  className='text-4xl font-bold text-white hover:text-gradient transition-colors'
+>
   me
 </a>
 

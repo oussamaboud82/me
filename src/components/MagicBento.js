@@ -1,8 +1,51 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import { gsap } from 'gsap';
-import frImg from '../assets/fr.png';
+import {
+  frenchApp,
+  project1,
+  project2,
+  project3,
+  project4,
+} from '../assets/work';
 
 const DEFAULT_PARTICLE_COUNT = 12;
+
+const WorkCardImage = ({ image, title, label }) => {
+  if (!image) return null;
+
+  if (image === 'coming soon') {
+    return (
+      <div className="card__image mb-3 w-fit rounded-lg border border-white/10 px-4 py-3 text-center">
+        <div className="text-xs opacity-70 mb-1">Image</div>
+        <div className="text-xs font-semibold">Coming Soon</div>
+      </div>
+    );
+  }
+
+  const isInsideFrame = label?.trim() === 'I';
+
+  if (isInsideFrame) {
+    return (
+      <div className="card__image mb-3 w-full flex-1 min-h-0 flex items-center justify-center overflow-hidden rounded-lg border border-white/10 bg-black/20">
+        <img
+          src={image}
+          alt={title}
+          className="block max-w-full max-h-full w-auto h-auto object-contain"
+        />
+      </div>
+    );
+  }
+
+  return (
+    <div className="card__image mb-3 w-fit max-w-full overflow-hidden rounded-lg leading-none">
+      <img
+        src={image}
+        alt={title}
+        className="block w-auto h-auto max-w-full"
+      />
+    </div>
+  );
+};
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
 const DEFAULT_GLOW_COLOR = '132, 0, 255';
 const MOBILE_BREAKPOINT = 768;
@@ -13,43 +56,43 @@ const cardData = [
     title: 'French-app',
     description: 'A project to learn French',
     label: 'I ',
-    image: frImg
+    image: frenchApp,
   },
   {
     color: '#060010',
     title: 'D ',
     description: 'C ',
     label: 'O ',
-    image: 'coming soon'
+    image: project1,
   },
   {
     color: '#060010',
     title: 'C ',
     description: 'W ',
     label: 'T ',
-    image: 'coming soon'
+    image: project2,
   },
   {
     color: '#060010',
     title: 'A ',
     description: 'S ',
     label: 'e',
-    image: 'coming soon'
+    image: project3,
   },
   {
     color: '#060010',
     title: 'I ',
     description: 'C ',
     label: 'C ',
-    image: 'coming soon'
+    image: project4,
   },
   {
     color: '#060010',
     title: 'S ',
     description: 'E ',
     label: 'P ',
-    image: 'coming soon'
-  }
+    image: 'coming soon',
+  },
 ];
 
 const createParticleElement = (x, y, color = DEFAULT_GLOW_COLOR) => {
@@ -731,23 +774,8 @@ const MagicBento = ({
                   <div className="card__header flex justify-between gap-3 relative text-white">
                     <span className="card__label text-base">{card.label}</span>
                   </div>
-                  <div className="card__content flex flex-col relative text-white">
-                    {card.image && (
-                      <div className="card__image mb-3 flex items-center justify-center h-20">
-                        {card.image === 'coming soon' ? (
-                          <div className="text-center">
-                            <div className="text-xs opacity-70 mb-1">Image</div>
-                            <div className="text-xs font-semibold">Coming Soon</div>
-                          </div>
-                        ) : (
-                          <img 
-                            src={card.image} 
-                            alt={card.title}
-                            className="max-h-full max-w-full object-contain"
-                          />
-                        )}
-                      </div>
-                    )}
+                  <div className="card__content flex flex-col flex-1 min-h-0 relative text-white">
+                    <WorkCardImage image={card.image} title={card.title} label={card.label} />
                     <h3 className={`card__title font-normal text-base m-0 mb-1 ${textAutoHide ? 'text-clamp-1' : ''}`}>
                       {card.title}
                     </h3>
@@ -879,23 +907,8 @@ const MagicBento = ({
                 <div className="card__header flex justify-between gap-3 relative text-white">
                   <span className="card__label text-base">{card.label}</span>
                 </div>
-                <div className="card__content flex flex-col relative text-white">
-                  {card.image && (
-                    <div className="card__image mb-3 flex items-center justify-center h-20">
-                      {card.image === 'coming soon' ? (
-                        <div className="text-center">
-                          <div className="text-xs opacity-70 mb-1">Image</div>
-                          <div className="text-xs font-semibold">Coming Soon</div>
-                        </div>
-                      ) : (
-                        <img 
-                          src={card.image} 
-                          alt={card.title}
-                          className="max-h-full max-w-full object-contain"
-                        />
-                      )}
-                    </div>
-                  )}
+                <div className="card__content flex flex-col flex-1 min-h-0 relative text-white">
+                  <WorkCardImage image={card.image} title={card.title} label={card.label} />
                   <h3 className={`card__title font-normal text-base m-0 mb-1 ${textAutoHide ? 'text-clamp-1' : ''}`}>
                     {card.title}
                   </h3>
