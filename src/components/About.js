@@ -120,7 +120,7 @@ const About = () => {
       enableTilt={true}
       enableMobileTilt={false}
       onContactClick={() => {
-        window.open('https://mail.google.com/mail/?view=cm&fs=1&to=ou2484246@gmail.com', '_blank');
+        window.open('https://mail.google.com/mail/?view=cm&fs=1&to=oussamapc82@gmail.com', '_blank');
       }}
       onCardClick={() => {
         const instagramUrl = 'https://www.instagram.com/ousama_10_25';
@@ -195,7 +195,7 @@ className='mb-6 '>i am front-end and back-end devloper with 2 years of experienc
 </div>
 
 <button 
-  onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=ou2484246@gmail.com', '_blank')}
+  onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=oussamapc82@gmail.com', '_blank')}
   className='btn btn-sm'
 >
   contact me

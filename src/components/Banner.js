@@ -57,7 +57,7 @@ viewport={{once:false,amount:0.7}}
      
      className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
       <button 
-  onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=ou2484246@gmail.com', '_blank')}
+  onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=oussamapc82@gmail.com', '_blank')}
   className='btn btn-lg '
 >
   contact

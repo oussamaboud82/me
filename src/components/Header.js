@@ -17,7 +17,7 @@ const Header = () => {
 </a>
 
 <button 
-  onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=ou2484246@gmail.com', '_blank')}
+  onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=oussamapc82@gmail.com', '_blank')}
   className='btn btn-sm'
 >
   contact me
